@@ -22,10 +22,10 @@ The QP solver I used in matlab is built-in `quadprog`, and in python is [OSQP](h
 Matlab start script is `matlab/matlab_test.m`, and python is `python/test_qp_solver.py`.
 Here is a reference running time (in seconds) on my laptop, Mid 2014 MBP, with 2.5 GHz Quad-Core Intel Core i7 CPU.
 
-| problem | matlab | python |
+| problem | matlab | python (OpenBLAS / MKL) |
 ---|---|---
-| QP | 46.0 | 96.2 |
-| Linear system | 0.258 | 1.94 |
+| QP | 46.0 | 96.2 / 129.6 |
+| Linear system | 0.258 | 1.94 / 1.15 |
 
 In any bench, matlab is much faster than python.
 
