@@ -11,9 +11,9 @@ $$
 $$
 
 Here I have prepared data for these matrix and vectors, which are stored binary.
-And also I have functions to read them in matlab and python. **NOTE**, the data files
+And also I have functions to read them in matlab and python. **NOTE**, *the data files
 are tracked by [GIT LFS](https://git-lfs.github.com/), make sure you have installed it
-and pulled the right data files, which are as large as several MBs.
+and pulled the right data files, which are as large as several MBs*.
 
 There are two benchmarks. One is to solve the QP, and the other one is to solve an associated linear system of the QP, i.e. $\mathbf{x}=-\mathbf{H}^{-1}\mathbf{f}$.
 
