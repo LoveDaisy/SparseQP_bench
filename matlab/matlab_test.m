@@ -38,4 +38,4 @@ x_lin = -H \ f;
 t_lin = toc;
 
 fprintf('finish!\n');
-fprintf('  elapse: %.3fsec', t_lin);
+fprintf('  elapse: %.3fsec\n', t_lin);

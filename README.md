@@ -24,8 +24,8 @@ Here is a reference running time (in seconds) on my laptop, Mid 2014 MBP, with 2
 
 | problem | matlab | python (OpenBLAS / MKL) |
 ---|---|---
-| QP | 46.0 | 96.2 / 129.6 |
-| Linear system | 0.258 | 1.94 / 1.15 |
+| QP | 55.9 | 165.7 / 129.6 |
+| Linear system | 0.290 | 3.09 / 1.15 |
 
 In any bench, matlab is much faster than python.
 
