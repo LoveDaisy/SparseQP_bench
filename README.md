@@ -1,6 +1,6 @@
 # Sparse QP bench
 
-It is a simple benchmark for a large scale sparse quadratic programing (QP) problem.
+It is a simple benchmark for a large scale sparse quadratic programming (QP) problem.
 The QP is formulated as,
 
 $$
