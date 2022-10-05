@@ -10,7 +10,7 @@ f = read_vec('../data/f.bin');
 lb = read_vec('../data/lb.bin');
 ub = read_vec('../data/ub.bin');
 
-% Load refrence solution
+% Load reference solution
 x0 = read_vec('../data/x.bin');
 
 % Solve the QP with builtin quadprog function
@@ -22,7 +22,7 @@ t_qp = toc;
 
 fprintf('finish!\n');
 fprintf('  obj: %.6e\n', 0.5 * x_qp' * H * x_qp + f' * x_qp);
-fprintf('  violation: %d\n', sum(x_qp < lb) + sum(x_qp > EPS));
+fprintf('  violation: %d\n', sum(x_qp < lb) + sum(x_qp > ub));
 fprintf('  elapse: %.2fsec', t_qp);
 
 % Check the solution
