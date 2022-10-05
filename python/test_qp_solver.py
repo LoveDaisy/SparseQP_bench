@@ -1,5 +1,6 @@
 import logging
 import scipy as sp
+import scipy.sparse.linalg as lin
 import numpy as np
 import osqp
 import time
@@ -41,7 +42,7 @@ if __name__ == '__main__':
     logging.info('Solving linear system...')
 
     t0 = time.time()
-    x_lin = sp.sparse.linalg.spsolve(H, -f)
+    x_lin = lin.spsolve(H, -f)
     t1 = time.time()
 
     logging.info('finish!')
